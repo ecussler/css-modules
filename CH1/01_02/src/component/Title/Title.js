@@ -1,11 +1,13 @@
 import React from 'react';
+import styles from './Title.module.css'; 
 
-export default class App extends React.Component {
-  render() {
+
+const Title = () => {
     return (
       <div>
-        <h1>Stateful component</h1>
+        <h1 className={styles.title}>Title</h1>
       </div>
     );
   }
-}
+
+export default Title; 
